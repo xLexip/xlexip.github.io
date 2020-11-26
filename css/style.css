@@ -1,0 +1,41 @@
+html, body {
+    height: 95%;
+    background-color: rgb(13, 13, 19);
+    font-family: 'Montserrat', sans-serif;
+
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+div.item {
+    vertical-align: center;
+    text-align: center;
+    width: 120px;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.headline{
+    font-size: 35px;
+    color: rgb(255, 102, 0);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
