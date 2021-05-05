@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Android 12 on Lexip&#39;s Blog (xLexip)</title>
+    <link>/tags/android-12/</link>
+    <description>Recent content in Android 12 on Lexip&#39;s Blog (xLexip)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 25 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/android-12/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pixel Experience: Android 12 &amp; 11 for the OnePlus 5 and 5T</title>
+      <link>/projects/pe/</link>
+      <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/pe/</guid>
+      <description>Official Pixel Experience 12 and 11 for the OnePlis 5 Series.</description>
+    </item>
+    
+  </channel>
+</rss>
