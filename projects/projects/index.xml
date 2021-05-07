@@ -16,12 +16,12 @@
     </item>
     
     <item>
-      <title>Android: ROM/OS Updater App</title>
+      <title>Android: System Updater App</title>
       <link>/projects/ota-updater/</link>
       <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>/projects/ota-updater/</guid>
-      <description>An android system app for over-the-air system updates.</description>
+      <description>An android app for over-the-air system updates on custom android distros.</description>
     </item>
     
     <item>
