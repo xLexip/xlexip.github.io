@@ -1,0 +1,4 @@
+baseURL = 'http://lexip.dev/'
+languageCode = 'en-us'
+title = 'lexip.dev'
+theme = "blist"
