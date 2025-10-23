@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Disallow: /rr/imprint
+
+User-agent: GPTBot
+Disallow: /rr/imprint
+
+User-agent: ChatGPT-User
+Disallow: /rr/imprint
+
+User-agent: CCBot
+Disallow: /rr/imprint
+
+User-agent: ClaudeBot
+Disallow: /rr/imprint
+
+User-agent: Google-Extended
+Disallow: /rr/imprint
+
+User-agent: PerplexityBot
+Disallow: /rr/imprint
+
+User-agent: YouBot
+Disallow: /rr/imprint
+
+User-agent: Applebot-Extended
+Disallow: /rr/imprint
