@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const subject = params.get('subject') || 'Adaptive Theme Feedback';
+            const mailtoLink = `mailto:adaptive-theme@lexip.dev?subject=${encodeURIComponent(subject)}`;
+            window.location.href = mailtoLink;
+        });
+    </script>
+    <style>
+        body { font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+    </style>
+</head>
+<body>
+    <h3><a id="manual-link" href="https://github.com/xLexip/Adaptive-Theme/issues/new">Open new issue on Github.</a></h3>
+</body>
+</html>
