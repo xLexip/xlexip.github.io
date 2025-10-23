@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const subject = params.get('subject') || 'App Feedback';
+            const mailtoLink = `mailto:adaptive-theme@lexip.dev?subject=${encodeURIComponent(subject)}`;
+
+            document.getElementById('manual-link').href = mailtoLink;
+            window.location.href = mailtoLink;
+        });
+    </script>
+    <style>
+        body { font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+    </style>
+</head>
+<body>
+    <p><a id="manual-link" href="https://lexip.dev/hecate/issues">Click here if nothing happens...</a></p>
+</body>
+</html>
