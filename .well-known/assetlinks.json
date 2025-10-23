@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dev.lexip.hecate",
+      "sha256_cert_fingerprints": [
+        "AC:EF:12:60:DC:67:02:72:AA:52:16:43:5E:85:FC:CA:F3:3D:47:1F:94:39:CD:38:F6:25:2B:42:AC:56:2C:7D"
+      ]
+    }
+  }
+]

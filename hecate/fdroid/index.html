@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Open Adaptive Theme</title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background: Canvas;
+      color: CanvasText;
+    }
+
+    main {
+      width: min(34rem, calc(100% - 2rem));
+      text-align: center;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .75rem;
+      margin-top: 1.25rem;
+    }
+
+    a {
+      display: inline-block;
+      padding: .8rem 1.05rem;
+      border: 1px solid currentColor;
+      border-radius: .65rem;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .primary {
+      font-weight: 600;
+    }
+
+    .hint {
+      opacity: .75;
+      font-size: .95rem;
+      margin-top: 1rem;
+    }
+  </style>
+
+  <script>
+    (() => {
+      const packageName = "dev.lexip.hecate";
+      const clientUrl = `fdroid.app:${packageName}`;
+      const fdroidUrl = `https://f-droid.org/packages/${packageName}/`;
+      const isAndroid = /Android/i.test(navigator.userAgent);
+
+      window.addEventListener("DOMContentLoaded", () => {
+        if (!isAndroid) {
+          // On desktop there is no useful Android client deep link.
+          window.location.replace(fdroidUrl);
+          return;
+        }
+
+        // On Android, try Droid-ify / Neo Store.
+        //
+        // IMPORTANT: there is intentionally NO automatic timed fallback here.
+        // Chrome may show a "Continue in Droid-ify" confirmation UI while the
+        // webpage remains visible. A timer would redirect to f-droid.org before
+        // the user has had time to confirm that prompt.
+        window.location.href = clientUrl;
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <main>
+    <h1>Opening Adaptive Theme…</h1>
+
+    <p>
+      If your browser asks whether to continue in Droid-ify or Neo Store,
+      confirm the prompt.
+    </p>
+
+    <div class="buttons">
+      <a class="primary" href="fdroid.app:dev.lexip.hecate">
+        Open in Droid-ify / Neo Store
+      </a>
+
+      <a href="https://f-droid.org/packages/dev.lexip.hecate/">
+        Open with F-Droid / on F-Droid.org
+      </a>
+    </div>
+
+    <p class="hint">
+      If no compatible client opens, use the F-Droid link above.
+    </p>
+  </main>
+</body>
+</html>
